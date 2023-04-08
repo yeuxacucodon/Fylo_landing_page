@@ -19,11 +19,6 @@ function show() {
 	draw();
 }
 
-function handleGameOver() {
-	alert("GameOver");
-	location.reload();
-}
-
 // rome-ignore format: easier to read
 window.addEventListener("resize", () => {
 		cw = window.innerWidth;
