@@ -6,7 +6,7 @@ window.onload = () => {
 };
 
 let cw = window.innerWidth;
-let ch = window.innerHeight - 1;
+let ch = window.innerHeight;
 canvas.width = cw;
 canvas.height = ch;
 
