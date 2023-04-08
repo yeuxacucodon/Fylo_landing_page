@@ -30,19 +30,18 @@ window.addEventListener("resize", () => {
 );
 
 function gameOver() {
-	let gameOver = false;
 	const snakeHead = snake.tail[snake.tail.length - 1];
 	// rome-ignore format: easier to read
-	if (snakeHead.x < 0 || snakeHead.x > canvas.width || snakeHead.y < 0 || snakeHead.y > canvas.width) {
-		gameOver = true;
+	if (snakeHead.x < 0 || snakeHead.x > canvas.width || snakeHead.y < 0 || snakeHead.y > canvas.height) {
+		console.log("Game Over")
 	}
 }
 
 function update() {
+	gameOver();
 	ctx.clearRect(0, 0, canvas.width, canvas.height);
 	snake.move();
 	eatFood();
-	gameOver();
 }
 
 function eatFood() {
