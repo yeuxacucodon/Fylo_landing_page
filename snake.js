@@ -29,10 +29,20 @@ window.addEventListener("resize", () => {
 	true,
 );
 
+function gameOver() {
+	let gameOver = false;
+	const snakeHead = snake.tail[snake.tail.length - 1];
+	// rome-ignore format: easier to read
+	if (snakeHead.x < 0 || snakeHead.x > canvas.width || snakeHead.y < 0 || snakeHead.y > canvas.width) {
+		gameOver = true;
+	}
+}
+
 function update() {
 	ctx.clearRect(0, 0, canvas.width, canvas.height);
 	snake.move();
 	eatFood();
+	gameOver();
 }
 
 function eatFood() {
@@ -47,7 +57,7 @@ function draw() {
 	createRect(0, 0, canvas.width, canvas.height, "black");
 	createRect(0, 0, canvas.width, canvas.height);
 
-	for (let i = 0; i < snake.tail.length; i++) {
+	for (let i = 0; i < snake.tail.length; ++i) {
 		// rome-ignore format: easier to read
 		createRect(snake.tail[i].x + 2.5, snake.tail[i].y + 2.5, snake.size - 5, snake.size - 5, "red");
 	}
