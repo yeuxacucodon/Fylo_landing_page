@@ -33,7 +33,7 @@ function gameOver() {
 	const snakeHead = snake.tail[snake.tail.length - 1];
 	// rome-ignore format: easier to read
 	if (snakeHead.x < 0 || snakeHead.x > canvas.width || snakeHead.y < 0 || snakeHead.y > canvas.height) {
-		console.log("Game Over")
+      location.reload();
 	}
 }
 
@@ -130,9 +130,9 @@ class Food {
 		while (true) {
 			isTouching = false;
 			// rome-ignore format: easier to read
-			this.x = Math.floor((Math.random() * canvas.width) / snake.size) * snake.size;
+			this.x = Math.floor((Math.random() * (canvas.width - 20)) / snake.size) * snake.size;
 			// rome-ignore format: easier to read
-			this.y = Math.floor((Math.random() * canvas.height) / snake.size) * snake.size;
+			this.y = Math.floor((Math.random() * (canvas.height - 20)) / snake.size) * snake.size;
 
 			for (let i = 0; i < snake.tail.length; ++i) {
 				if (this.x === snake.tail[i].x && this.y === snake.tail[i].y) {
@@ -150,5 +150,6 @@ class Food {
 	}
 }
 
-const snake = new Snake(20, 20, 20);
+// rome-ignore format: easier to read
+const snake = new Snake(Math.floor(Math.random() * canvas.width), Math.floor((Math.random() * canvas.height) / 2), 20);
 let food = new Food();
