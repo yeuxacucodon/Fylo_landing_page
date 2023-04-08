@@ -151,5 +151,5 @@ class Food {
 }
 
 // rome-ignore format: easier to read
-const snake = new Snake(Math.floor(Math.random() * canvas.width), Math.floor((Math.random() * canvas.height) / 2), 20);
+const snake = new Snake(20, 20, 20);
 let food = new Food();
