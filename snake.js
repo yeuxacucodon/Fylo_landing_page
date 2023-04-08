@@ -49,7 +49,7 @@ function draw() {
 
 	for (let i = 0; i < snake.tail.length; i++) {
 		// rome-ignore format: easier to read
-		createRect(snake.tail[i].x + 2.5, snake.tail[i].y + 2.5, snake.size - 5, snake.size - 5, "white");
+		createRect(snake.tail[i].x + 2.5, snake.tail[i].y + 2.5, snake.size - 5, snake.size - 5, "red");
 	}
 	createRect(food.x, food.y, food.size, food.size, food.color);
 }
