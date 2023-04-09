@@ -2,17 +2,13 @@ const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 
 window.onload = () => {
-	gameLoop();
+	setInterval(show, 1000 / 10);
 };
 
 let cw = window.innerWidth;
 let ch = window.innerHeight;
 canvas.width = cw;
 canvas.height = ch;
-
-function gameLoop() {
-	setInterval(show, 1000 / 10);
-}
 
 function show() {
 	update();
