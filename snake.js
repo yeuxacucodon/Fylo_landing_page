@@ -79,7 +79,7 @@ window.addEventListener("keydown", (event) => {
 			snake.rotateX = 0;
 			snake.rotateY = 1;
 		}
-	}, 1);
+	}, 0);
 });
 
 class Snake {
