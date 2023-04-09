@@ -29,7 +29,7 @@ window.addEventListener("resize", () => {
 	true,
 );
 
-function gameOver() {
+function hitWall() {
 	const snakeHead = snake.tail[snake.tail.length - 1];
 	// rome-ignore format: easier to read
 	if (snakeHead.x < 0 || snakeHead.x > canvas.width || snakeHead.y < 0 || snakeHead.y > canvas.height) {
@@ -38,10 +38,10 @@ function gameOver() {
 }
 
 function update() {
-	gameOver();
 	ctx.clearRect(0, 0, canvas.width, canvas.height);
 	snake.move();
 	eatFood();
+	hitWall();
 }
 
 function eatFood() {
@@ -151,5 +151,5 @@ class Food {
 }
 
 // rome-ignore format: easier to read
-const snake = new Snake(20, 20, 20);
+const snake = new Snake(100,20,20);
 let food = new Food();
