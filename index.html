@@ -15,8 +15,8 @@
 			</div>
 			<nav class="nav-bar">
 				<ul>
-					<li><a href="#">Features</a></li>
-					<li><a href="#">Team</a></li>
+					<li><a href="#features">Features</a></li>
+					<li><a href="#testimonial">Team</a></li>
 					<li><a href="#">Sign In</a></li>
 				</ul>
 			</nav>
@@ -24,7 +24,7 @@
 
 		<main>
 			<!-- Intro -->
-			<section class="intro">
+			<section id="intro">
 				<div class="intro-img">
 					<img src="./images/illustration-intro.png" alt="intro-img" />
 				</div>
@@ -40,7 +40,7 @@
 			<!-- End intro -->
 
 			<!-- Features -->
-			<section class="features">
+			<section id="features">
 				<div class="features-item">
 					<div class="features-item-head">
 						<img src="./images/icon-access-anywhere.svg" />
@@ -94,29 +94,27 @@
 			<!-- End features -->
 
 			<!-- Productive -->
-			<section class="productive">
+			<section id="productive">
 				<div class="productive-img">
 					<img src="./images/illustration-stay-productive.png" />
 				</div>
 				<div class="productive-content">
 					<h2>Stay productive, wherever you are</h2>
-					<p class="lg-p">
+					<p class="">
 						Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage
 						needs.
 					</p>
-					<p class="lg-p">
+					<p class="">
 						Securely share files and folders with friends, family and colleagues for live collaboration. No email
 						attachments required.
 					</p>
-					<p class="lg-p">
-						<a class="content-link" href="#">See how Fylo works</a>
-					</p>
+					<a class="content-link" href="#">See how Fylo works</a>
 				</div>
 			</section>
 			<!-- End productive -->
 
 			<!-- Testimonials -->
-			<section class="testimonial">
+			<section id="testimonial">
 				<div class="testimonial-item">
 					<div class="testimonial-item-text">
 						<p>
@@ -124,10 +122,8 @@
 							become a well-oiled collaboration machine.
 						</p>
 					</div>
-					<div class="testimonial-item-reviewer">
-						<div class="testimonial-item-reviewer-img">
-							<img src="./images/profile-1.jpg" />
-						</div>
+					<div class="reviewer">
+						<img src="./images/profile-1.jpg" />
 						<div class="reviewer-info">
 							<h4>Satish Patel</h4>
 							<p>Founder & CEO, Huddle</p>
@@ -142,10 +138,8 @@
 							become a well-oiled collaboration machine.
 						</p>
 					</div>
-					<div class="testimonial-item-reviewer">
-						<div class="testimonial-item-reviewer-img">
-							<img src="./images/profile-2.jpg" />
-						</div>
+					<div class="reviewer">
+						<img src="./images/profile-2.jpg" />
 						<div class="reviewer-info">
 							<h4>Bruce McKenzie</h4>
 							<p>Founder & CEO, Huddle</p>
@@ -160,10 +154,8 @@
 							become a well-oiled collaboration machine.
 						</p>
 					</div>
-					<div class="testimonial-item-reviewer">
-						<div class="testimonial-item-reviewer-img">
-							<img src="./images/profile-3.jpg" />
-						</div>
+					<div class="reviewer">
+						<img src="./images/profile-3.jpg" />
 						<div class="reviewer-info">
 							<h4>Iva Boyd</h4>
 							<p>Founder & CEO, Huddle</p>
@@ -174,7 +166,7 @@
 			<!-- End testimonial -->
 
 			<!-- Contact -->
-			<section class="contact">
+			<section id="contact">
 				<div class="contact-container">
 					<div class="contact-text">
 						<h2>Get early access today</h2>
@@ -183,8 +175,10 @@
 							questions, our support team would be happy to help you.
 						</p>
 					</div>
-					<input type="email" placeholder="example@email.com" />
-					<button type="submit">Get Started For Free</button>
+					<form action="">
+						<input type="email" placeholder="example@email.com" />
+						<button type="submit">Get Started For Free</button>
+					</form>
 				</div>
 			</section>
 			<!-- End contact -->
@@ -192,7 +186,40 @@
 
 		<!-- Footer -->
 		<footer>
-			<section class="contact-info">
+			<section id="contact-info">
+				<img src="./images/logo.svg" />
+				<div class="location">
+					<img src="./images/icon-location.svg" />
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+						dolore magna aliqua
+					</p>
+				</div>
+				<div class="phone-email">
+					<div class="contact-item">
+						<img class="contact-info-logo" src="./images/icon-phone.svg" />
+						<p>+1-543-123-4567</p>
+					</div>
+					<div class="contact-item">
+						<img src="./images/icon-email.svg" />
+						<p>example@fylo.com</p>
+					</div>
+				</div>
+
+				<nav class="contact-info-links">
+					<ul class="contact-info-links-list">
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">Jobs</a></li>
+						<li><a href="#">Press</a></li>
+						<li><a href="#">Blog</a></li>
+					</ul>
+					<ul class="contact-info-links-list">
+						<li><a href="#">Contact Us</a></li>
+						<li><a href="#">Terms</a></li>
+						<li><a href="#">Privacy</a></li>
+					</ul>
+				</nav>
+
 				<div class="attribution-container">
 					<p class="attribution">
 						Challenge by
