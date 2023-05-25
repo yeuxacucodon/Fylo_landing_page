@@ -10,7 +10,30 @@ $accent-color-cyan: hsl(176, 68%, 64%);
 $accent-color-blue: hsl(198, 60%, 50%);
 $accent-color-light-red: hsl(0, 100%, 63%); // error
 $neutral-color-white: hsl(0, 0%, 100%);
+$padding-md: 3.5rem 3rem;
 
 body {
   background-color: $primary-color-dark-blue-2;
+  color: $neutral-color-white;
+  font-family: sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: $padding-md;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  li {
+    display: inline-block;
+    margin-left: 1rem;
+  }
+  a {
+    color: $neutral-color-white;
+    text-decoration: none;
+  }
 }
