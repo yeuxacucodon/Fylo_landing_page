@@ -261,6 +261,7 @@ header {
 		grid-area: contacts;
 		display: flex;
 		flex-direction: column;
+		margin-left: 50px;
 		.contact-item {
 			display: flex;
 			justify-content: center;
@@ -282,9 +283,14 @@ header {
 		.contact-info-links-list {
 			li {
 				margin-bottom: 10px;
+				list-style: none;
 				a {
 					color: $neutral-color-white;
 					text-decoration: none;
+					&:hover {
+						transition: 500ms;
+						color: $accent-color-cyan;
+					}
 				}
 			}
 		}
@@ -326,4 +332,4 @@ header {
 	}
 }
 
-@import 'mobile.scss';
+@import 'responsive.scss';

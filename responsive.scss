@@ -27,7 +27,7 @@
 		flex-direction: column;
 		.productive-img {
 			img {
-				width: 80%;
+				width: 100%;
 			}
 		}
 		.productive-content {
@@ -67,33 +67,42 @@
 	}
 	#contact-info {
 		padding: $padding-footer-tablet;
-		grid-template-columns: 100%;
-		grid-template-rows: repeat(6, auto);
-		grid-template-areas: 'logo' 'location' 'contacts' 'links' 'social' 'attribution';
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 		.location {
 			justify-content: center;
-			margin: 0;
 			text-align: justify;
+			margin: 0;
 			div {
 				height: 20px;
 				width: 15px;
 				margin: 0;
 				margin-bottom: 60px;
 			}
-			p {
-				width: 100%;
-			}
 		}
 		.contact-info-logo {
 			display: flex;
 			justify-content: center;
+			width: 100%;
 		}
 		.phone-email {
 			justify-content: center;
+			text-align: justify;
+			margin: 0;
 			margin-bottom: 20px;
 		}
 		.social-links {
 			justify-content: center;
+			margin-top: 1rem;
+			padding-right: 2rem;
+		}
+		.contact-info-links {
+			display: flex;
+			justify-content: center;
+			text-align: center;
+			padding-right: 3.5rem;
 		}
 	}
 }
