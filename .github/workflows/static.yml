@@ -31,7 +31,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - run: npm install
+      - run: npm update
       - run: npx sass style.scss style.css
       - name: Setup Pages
         uses: actions/configure-pages@v3
