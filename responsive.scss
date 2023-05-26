@@ -163,15 +163,23 @@
 			width: 100%;
 			margin-bottom: 50px;
 			div {
-				margin-right: 20px;
+				margin-right: 10px;
 			}
 		}
 		.contact-info-links {
 			flex-direction: column;
+			padding-right: 25px;
+		}
+		.social-links {
+			padding: 0;
+		}
+		.attribution-container {
+			padding-left: 20px;
 		}
 		.phone-email {
 			margin: 0;
 			margin-bottom: 20px;
+			padding-left: 25px;
 			.contact-item {
 				justify-content: flex-start;
 			}
