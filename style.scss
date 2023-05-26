@@ -6,6 +6,7 @@ $accent-color-cyan: hsl(176, 68%, 64%);
 $accent-color-blue: hsl(198, 60%, 50%);
 $accent-color-light-red: hsl(0, 100%, 63%); // error
 $neutral-color-white: hsl(0, 0%, 100%);
+$padding-sm: 2.5rem 2rem;
 $padding-md: 3.5rem 3rem;
 $padding-lg: 4.5rem 4rem;
 $padding-footer: 15rem 4rem 1rem;
@@ -324,3 +325,5 @@ header {
 		}
 	}
 }
+
+@import 'mobile.scss';
